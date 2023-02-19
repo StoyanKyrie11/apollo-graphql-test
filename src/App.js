@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import DelayedQuery from "./components/DelayedQuery";
+import DisplayLocations from "./components/DisplayLocations";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h2>My first Apollo app 🚀</h2>
+      <br />
+      <DisplayLocations />
+      <DelayedQuery />
+    </>
   );
 }
-
-export default App;
